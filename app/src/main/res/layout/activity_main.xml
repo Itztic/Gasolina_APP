@@ -5,23 +5,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"/> -->
 
     <EditText
         android:id="@+id/cityEditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/logoImageView"
+        android:layout_height="wrap_content"/>
+        <!--android:layout_below="@id/logoImageView"
         android:layout_marginStart="24dp"
         android:layout_marginTop="22dp"
         android:layout_marginEnd="24dp"
-        android:hint="Introduce tu ciudad" />
+        android:hint="Introduce tu ciudad" />-->
 
     <Button
         android:id="@+id/searchButton"
