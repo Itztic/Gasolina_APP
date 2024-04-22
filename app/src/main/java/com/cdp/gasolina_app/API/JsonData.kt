@@ -1,0 +1,36 @@
+package com.cdp.gasolina_app.API
+
+data class JsonData(
+    val provincia: String,
+    val municipio: String,
+    val localidad: String,
+    val codigoPostal: String,
+    val direccion: String,
+    val margen: String,
+    val longitud: String,
+    val latitud: String,
+    val tomaDeDatos: String,
+    val precioGasolina95E5: String,
+    val precioGasolina95E10: String,
+    val precioGasolina95E5Premium: String,
+    val precioGasolina98E5: String,
+    val precioGasolina98E10: String,
+    val precioGasoleoA: String,
+    val precioGasoleoPremium: String,
+    val precioGasoleoB: String,
+    val precioGasoleoC: String,
+    val precioBioetanol: String,
+    val porcentajeBioalcohol: String,
+    val precioBiodiesel: String,
+    val porcentajeEsterMetilico: String,
+    val precioGasesLicuadosPetroleo: String,
+    val precioGasNaturalComprimido: String,
+    val precioGasNaturalLicuado: String,
+    val precioHidrogeno: String,
+    val rotulo: String,
+    val tipoVenta: String,
+    val rem: String,
+    val horario: String,
+    val tipoServicio: String
+)
+
