@@ -1,44 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <!--<ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/> -->
-
     <EditText
-        android:id="@+id/cityEditText"
+        android:id="@+id/etCodigoPostal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-        <!--android:layout_below="@id/logoImageView"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="24dp"
-        android:hint="Introduce tu ciudad" />-->
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu código postal"
+        android:inputType="textPostalAddress" />
 
     <Button
-        android:id="@+id/searchButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Buscar"
-        android:layout_below="@id/cityEditText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="16dp" />
 
     <TextView
-        android:id="@+id/favoritesTextView"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvResultados"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tus sitios favoritos:"
-        android:layout_below="@id/searchButton"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="24dp"/>
+        android:layout_marginTop="16dp"
+        android:text="" />
 
-</RelativeLayout>
+</LinearLayout>
