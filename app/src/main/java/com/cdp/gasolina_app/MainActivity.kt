@@ -3,6 +3,7 @@ package com.cdp.gasolina_app
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.cdp.gasolina_app.API.RetrofitInstance
@@ -18,6 +19,10 @@ class MainActivity : AppCompatActivity() {
         val etCodigoPostal: EditText = findViewById(R.id.etCodigoPostal)
         val btnBuscar: Button = findViewById(R.id.btnBuscar)
         val tvResultados: TextView = findViewById(R.id.tvResultados)
+
+        // variables para el error:
+        //val errorLayout = findViewById<LinearLayout>(R.layout.error_layout)
+        //val btnRetry = findViewById<Button>(R.id.button_reload)
 
         btnBuscar.setOnClickListener {
             val codigoPostal = etCodigoPostal.text.toString()
