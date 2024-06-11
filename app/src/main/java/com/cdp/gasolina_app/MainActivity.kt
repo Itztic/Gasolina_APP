@@ -3,6 +3,7 @@ package com.cdp.gasolina_app
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         val etCodigoPostal: EditText = findViewById(R.id.etCodigoPostal)
         val btnBuscar: Button = findViewById(R.id.btnBuscar)
         val tvResultados: TextView = findViewById(R.id.tvResultados)
+        val errorImageView: ImageView = findViewById(R.id.imageView2)
+
 
         // variables para el error:
         //val errorLayout = findViewById<LinearLayout>(R.layout.error_layout)
@@ -34,8 +37,10 @@ class MainActivity : AppCompatActivity() {
                     runOnUiThread {
                         if (!estacionesFiltradas.isNullOrEmpty()) {
                             tvResultados.text = estacionesFiltradas.joinToString("\n") { it.rotulo }
+                            errorImageView.visibility = ImageView.GONE
                         } else {
                             tvResultados.text = "No se encontraron gasolineras para el código postal $codigoPostal"
+                            errorImageView.visibility = ImageView.VISIBLE
                         }
                     }
                 } else {
