@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         //val errorLayout = findViewById<LinearLayout>(R.layout.error_layout)
         //val btnRetry = findViewById<Button>(R.id.button_reload)
 
+        //esto es una prueba
+
         btnBuscar.setOnClickListener {
             val codigoPostal = etCodigoPostal.text.toString()
             CoroutineScope(Dispatchers.IO).launch {
